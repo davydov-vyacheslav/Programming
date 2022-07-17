@@ -15,15 +15,15 @@
 У ході виконання роботи, ви повинні отримати наступну структуру.
 
 ```
-		.
-		└── lab08
-		    ├── README.md
-		    ├── Doxyfile
-		    ├── Makefile
-		    ├── src
-		    │    └── main.c
-		    └── dist/
-		         └── html/
+.
+└── lab08
+    ├── README.md
+    ├── Doxyfile
+    ├── Makefile
+    ├── src
+    │    └── main.c
+    └── dist/
+         └── html/
 ```
 
 Пояснення до структури:

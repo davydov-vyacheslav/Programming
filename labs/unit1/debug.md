@@ -31,20 +31,20 @@
 
 Таким чином, у вашому проекті повинні бути наступні елементи
 ```
-		├── .clang-format
-		├── .clang-tidy
-		├── .gitlab-ci.yml
-		├── README.md
-		└── lab02
-		    ├── Doxyfile
-		    ├── Makefile
-		    ├── README.md
-		    ├── src
-		    │   ├── lib.c
-		    │   ├── lib.h
-		    │   └── main.c
-		    └── test
-		        └── test.c
+├── .clang-format
+├── .clang-tidy
+├── .gitlab-ci.yml
+├── README.md
+└── lab02
+    ├── Doxyfile
+    ├── Makefile
+    ├── README.md
+    ├── src
+    │   ├── lib.c
+    │   ├── lib.h
+    │   └── main.c
+    └── test
+        └── test.c
 ```
 
 4.	Зафіксувати зміни (за допомогою команди *git commit*) під назвою "Initial copy of sample_project". **Зверніть увагу**, 
@@ -60,27 +60,27 @@
 9.	Написати звіт о ході виконання роботи та отриманих результатах. Звіт не повинен мати зображення!
 10. Завантажити зміни за допомогою команди *git push*. На поточний час, структура репозиторію, що завантажується на видалений сервер, повинна виглядати наступним чином:
 ```
-		├── .git
-		├── .gitignore
-		├── .clang-format
-		├── .clang-tidy
-		├── .gitlab-ci.yml
-		├── README.md
-		├── lab01
-		│   └── doc
-		│       └── lab01.txt
-		└── lab02
-		    ├── Doxyfile
-		    ├── Makefile
-		    ├── README.md
-		    ├── doc
-		    │   └── lab02.txt
-		    ├── src
-		    │   ├── lib.c
-		    │   ├── lib.h
-		    │   └── main.c
-		    └── test
-		        └── test.c
+├── .git
+├── .gitignore
+├── .clang-format
+├── .clang-tidy
+├── .gitlab-ci.yml
+├── README.md
+├── lab01
+│   └── doc
+│       └── lab01.txt
+└── lab02
+    ├── Doxyfile
+    ├── Makefile
+    ├── README.md
+    ├── doc
+    │   └── lab02.txt
+    ├── src
+    │   ├── lib.c
+    │   ├── lib.h
+    │   └── main.c
+    └── test
+        └── test.c
 ```
 
 Пояснення до структури:

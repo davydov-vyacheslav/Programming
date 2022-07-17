@@ -3,14 +3,14 @@
 ## Структура директорії для лабораторної роботи
 
 ```
-		.
-		└── lab07
-		    ├── Makefile
-		    ├── README.md
-		    ├── doc
-		    │   └── lab07.txt
-		    └── src
-		        └── main.c
+.
+└── lab07
+    ├── Makefile
+    ├── README.md
+    ├── doc
+    │   └── lab07.txt
+    └── src
+        └── main.c
 ```
 
 ## Індивідуальні завдання.
