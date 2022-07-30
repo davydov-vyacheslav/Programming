@@ -1,4 +1,8 @@
 # Вступ до показчиків
+
+<!-- apline package: apk add vim clang llvm clang-extra-tools cppcheck gtest compiler-rt gtest-dev -->
+<!-- and more: compiler-rt-static check-dev check lldb valgrind -->
+
 ## Структура директорії для лабораторної роботи
 
 ```
@@ -27,17 +31,15 @@ leak-check: clean prep compile
 	valgrind $(V_FLAGS) --log-file=dist/valgrind.log --xml-file=dist/valgrind.xml --xml=yes dist/test.bin
 ```
 
+**Альтернативний варіант** за використанням `llvm`:
+    - при компіляції (C_OPTS) додати опцію `-fsanitize=address`
+    - створити `leak-check` ціль наступним чином:
 
-<!-- TODO: alternative:
-
-	ASAN_OPTIONS=detect_leaks=1 ./dist/main.bin
-	ASAN_OPTIONS=detect_leaks=1 ./dist/test.bin
-
-# TODO: clang-based leaks check:
-	# clang -O1 -fsanitize=address -fno-omit-frame-pointer -g memory-leak.c
-
- -->
-
+```sh
+leak-check: clean prep compile
+    ASAN_OPTIONS=detect_leaks=1 dist/main.bin
+    ASAN_OPTIONS=detect_leaks=1 LLVM_PROFILE_FILE="dist/test.profraw" dist/test.bin
+```
 
 ## Індивідуальні завдання.
 
@@ -67,7 +69,7 @@ leak-check: clean prep compile
 
 - програма має мати документацію, що оформлена за допомогою утиліти doxygen;
 - звіт повинен бути оформлений згідно "Вимогам до структурної побудови звіту";
-- продемонструвати відсутність витоків пам’яті за допомогою утиліти *valgrind*;
+- продемонструвати відсутність витоків пам’яті;
 - доступ до елементів масиву здійснювати через розіменування покажчиків, а не через оператор індексування (*[ ]*);
 - продемонструвати роботу розроблених методів за допомогою модульних тестів;
 - у звіті навести ступень покриття коду модульними тестами. 50% - є мінімально допустимим відсотком покриття коду тестами.

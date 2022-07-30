@@ -3,17 +3,14 @@
 
 * Створити *новий* репозиторій (по аналогії з інснуючим) з назвою: *programing-FNAME-cpp* (`programing-davydov-cpp`): 
 * Додати до репозиторію файли:
-	- `.clang-format` з попереднього репозиторію
-	- `.clang-tidy` з попереднього репозиторію
-	- `.gitlab-ci.yml` з наступним контентом:
+	- `.clang-format` з директорії `lab-cpp00` репозиторію `sample_project`
+	- `.clang-tidy` з директорії `lab-cpp00` репозиторію `sample_project`
+* модульні тести потрібно (пере)робити за допомогою Google Test Framework: https://google.github.io/googletest/, при цьому, рекомендовано проінсталювати `googletest` пакет та використовувати наступні опції при компіляції тестів `-lgtest -lgtest_main`. Приклад переробленого тесту наведено у `lab-cpp00` проекту `sample_project` репозиторію.
+
+<!--	- `.gitlab-ci.yml` з наступним контентом:
 ```
 include: https://gitlab.com/davs/cicd-pro-checker/-/raw/master/subjects/pro2/.gitlab-ci.yml
-```
-* модульні тести потрібно (пере)робити за допомогою Google Test Framework: https://google.github.io/googletest/
-
-<!-- TODO: 
-in this case gtest should present in project structure
--->
+``` -->
 
 ### Структура директорії для лабораторної роботи
 
