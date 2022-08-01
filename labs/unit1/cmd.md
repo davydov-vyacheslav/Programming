@@ -91,6 +91,7 @@ This program built for i386-apple-darwin11.3.0
 - Сайт з образами Лінукс дистрибутивів: http://osboxes.org/
 - Робота з `apt-get`: https://itsfoss.com/apt-get-linux-guide/
 - 30 базових команд `git`: https://habr.com/ru/company/ruvds/blog/599929/
+- `Makefile` Tutorial: https://makefiletutorial.com
 
 ## Контрольні питання.
 
