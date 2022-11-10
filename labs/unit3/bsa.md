@@ -14,7 +14,7 @@
 └── lab08
 	....
     └── doc
-        ├── lab08.docx
+        ├── lab08.md
         ....
         └── assets
             ├── function-main.png
